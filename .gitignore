@@ -3,7 +3,7 @@ eclipse/.metadata/.log
 *.log
 =======
 *.pydevproject
-.metadata
+*.metadata
 .gradle
 bin/
 tmp/
