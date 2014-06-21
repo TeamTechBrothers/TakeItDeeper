@@ -1,1 +1,0 @@
-INDEX VERSION 1.126+C:\Users\Brock\Documents\GitHub\TakeItDeeper\eclipse\.metadata\.plugins\org.eclipse.jdt.core
