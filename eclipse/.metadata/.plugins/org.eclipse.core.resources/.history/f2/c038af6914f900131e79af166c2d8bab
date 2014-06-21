@@ -1,0 +1,23 @@
+package banditmods.blocks;
+
+import net.minecraft.block.Block;
+import cpw.mods.fml.common.registry.GameRegistry;
+
+public class ModBlocks
+{
+
+	public static Block firstBlock;
+	public static Block firstContainerBlock;
+
+	public static void init()
+	{
+		firstBlock = new firstBlock();
+		firstContainerBlock = new FirstInventory();
+	}
+
+	// Register the blocks
+	public static void register(BlockBanditMods block)
+	{
+		GameRegistry.registerBlock(block, block.getUnwrappedUnlocalizedName(block.getUnlocalizedName()));
+	}
+}

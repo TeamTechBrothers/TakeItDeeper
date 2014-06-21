@@ -1,0 +1,10 @@
+package takeitdeeper;
+
+import banditmods.lib.References;
+import cpw.mods.fml.common.Mod;
+
+@Mod(modid = References.MODID, name = References.MODNAME, version = References.VERSION)
+public class TakeItDeeper {
+
+	
+}

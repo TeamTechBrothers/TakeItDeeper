@@ -1,0 +1,81 @@
+---- Minecraft Crash Report ----
+// Everything's going to plan. No, really, that was supposed to happen.
+
+Time: 6/21/14 2:38 AM
+Description: Initializing game
+
+java.lang.IllegalArgumentException: Multiple entries with same key: banditmods=FMLMod:banditmods{1.0.0} and banditmods=FMLMod:banditmods{1.0.0}
+	at com.google.common.collect.ImmutableMap.checkNoConflict(ImmutableMap.java:150)
+	at com.google.common.collect.RegularImmutableMap.checkNoConflictInBucket(RegularImmutableMap.java:104)
+	at com.google.common.collect.RegularImmutableMap.<init>(RegularImmutableMap.java:70)
+	at com.google.common.collect.ImmutableMap$Builder.build(ImmutableMap.java:254)
+	at com.google.common.collect.Maps.uniqueIndex(Maps.java:1164)
+	at com.google.common.collect.Maps.uniqueIndex(Maps.java:1138)
+	at cpw.mods.fml.common.Loader.identifyMods(Loader.java:348)
+	at cpw.mods.fml.common.Loader.loadMods(Loader.java:467)
+	at cpw.mods.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:204)
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:467)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:815)
+	at net.minecraft.client.main.Main.main(SourceFile:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at com.google.common.collect.ImmutableMap.checkNoConflict(ImmutableMap.java:150)
+	at com.google.common.collect.RegularImmutableMap.checkNoConflictInBucket(RegularImmutableMap.java:104)
+	at com.google.common.collect.RegularImmutableMap.<init>(RegularImmutableMap.java:70)
+	at com.google.common.collect.ImmutableMap$Builder.build(ImmutableMap.java:254)
+	at com.google.common.collect.Maps.uniqueIndex(Maps.java:1164)
+	at com.google.common.collect.Maps.uniqueIndex(Maps.java:1138)
+	at cpw.mods.fml.common.Loader.identifyMods(Loader.java:348)
+	at cpw.mods.fml.common.Loader.loadMods(Loader.java:467)
+	at cpw.mods.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:204)
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:467)
+
+-- Initialization --
+Details:
+Stacktrace:
+	at net.minecraft.client.Minecraft.run(Minecraft.java:815)
+	at net.minecraft.client.main.Main.main(SourceFile:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.2
+	Operating System: Windows 8.1 (amd64) version 6.3
+	Java Version: 1.8.0_05, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 884480408 bytes (843 MB) / 1056309248 bytes (1007 MB) up to 1056309248 bytes (1007 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.03 FML v7.2.211.1121 Minecraft Forge 10.12.2.1121 5 mods loaded, 0 mods active
+	mcp{9.03} [Minecraft Coder Pack] (minecraft.jar) 
+	FML{7.2.211.1121} [Forge Mod Loader] (forgeBin-1.7.2-10.12.2.1121.jar) 
+	Forge{10.12.2.1121} [Minecraft Forge] (forgeBin-1.7.2-10.12.2.1121.jar) 
+	banditmods{1.0.0} [Modding Basics] (bin) 
+	banditmods{1.0.0} [Modding Basics] (bin) 
+	Launched Version: 1.6
+	LWJGL: 2.9.0
+	OpenGL: ATI Mobility Radeon HD 4200 Series GL version 3.3.11672 Compatibility Profile Context, ATI Technologies Inc.
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: ~~ERROR~~ NullPointerException: null
+	Anisotropic Filtering: Off (1)

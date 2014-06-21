@@ -1,0 +1,14 @@
+package takeitdeeper.core.proxy;
+
+import banditmods.inventory.TileEntityFirstContainer;
+import banditmods.tileentitys.firstTileEntity;
+import cpw.mods.fml.common.registry.GameRegistry;
+
+public class CommonProxy
+{
+	public void registerTileEntities()
+    {
+        GameRegistry.registerTileEntity(firstTileEntity.class, "FirstBlockTileEntity");
+        GameRegistry.registerTileEntity(TileEntityFirstContainer.class, "FirstTileEntityContainer");
+    }
+}
